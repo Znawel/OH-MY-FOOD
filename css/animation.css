@@ -1,0 +1,181 @@
+/*Loading spinner*/
+.loader{
+    opacity: 0.6;
+    position:fixed;
+    height: 100vh;
+    background-color: #eaeaea;
+    width: 100%;
+    animation: disappear 200ms 3s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes disappear{
+    to {
+        transform: scale(0);
+    }
+}
+#loading {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border: 15px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/*Fonctionnement*/
+.restaurant:hover{
+    background-color: #e4d5f6;
+}
+.restaurant:hover .fa-store{
+    color:#9356DC;
+}
+.restaurant:hover .fa-mobile-screen-button{
+    color:#9356DC;
+}
+.restaurant:hover .fa-list{
+    color:#9356DC;
+}
+/*Le coeur*/
+@keyframes fill {
+    0% {
+      opacity: 0;
+    }
+    10%{
+        opacity:0.1;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    30%{
+        opacity: 0.3
+    }
+    40%{
+        opactiy: 0.4;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    80%{
+        opacity:0.8;
+    }
+    90%{
+        opacity:0.9;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.fa-heart:hover{
+      animation: fill 2s ease-in-out;
+      display: inline-block;
+      opacity: 1;
+      background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+      background-color:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+      background-clip: content-box;
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      font-weight: bold;
+}
+/*bouton exploration et commande*/
+button:hover{
+    background: linear-gradient(
+      170deg,
+      rgba(255, 121, 218, 0.8) 0%,
+      rgba(214, 108, 219, 0.8) 39%,
+      rgba(171, 94, 220, 0.8) 85%,
+      rgba(155, 89, 220, 0.8) 100%
+    );
+    box-shadow: 19px 18px 18px darkshadow;
+}
+/*Apparition menu*/
+.starters{
+    animation: fadein 2s ease-in-out;
+}
+.course{
+    animation: fadein 4s ease-in-out;
+}
+.dessert{
+    animation: fadein 6s ease-in-out;
+}
+  @keyframes fadein {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:2;
+    }
+  }
+  /*La coche entrées*/
+  .menu-confirmation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    cursor: pointer;
+    width: 50px;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding-right: 20px;
+    padding-left: 20px;
+    right: -50px;
+    top: 0;
+    opacity: 0;
+} 
+  .menu-starters:hover{
+    padding-right: 120px;
+}
+.menu-starters:hover .menu-confirmation{
+    transform: translate(-50px);
+    opacity: 1;
+}
+.menu-starters:hover .fa-circle-check{
+    transform: rotate(360deg);
+}
+.fa-circle-check{
+    color:white;
+    font-size: 30px;
+    transition: transform 500ms ease-in-out;
+}
+/*Coche plats*/
+.menu-course:hover{
+    padding-right: 120px;
+}
+.menu-course:hover .menu-confirmation{
+    transform: translate(-50px);
+    opacity: 1;
+}
+.menu-course:hover .fa-circle-check{
+    transform: rotate(360deg);
+}
+/*coche desserts*/
+.menu-dessert:hover{
+    padding-right: 120px;
+}
+.menu-dessert:hover .menu-confirmation{
+    transform: translate(-50px);
+    opacity: 1;
+}
+.menu-dessert:hover .fa-circle-check{
+    transform: rotate(360deg);
+}

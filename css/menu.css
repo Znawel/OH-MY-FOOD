@@ -1,0 +1,214 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:auto;
+}
+/*header*/ 
+.fa-arrow-left{
+    font-size: 30px;
+    padding: 20px 55px 20px 20px;
+    color: black;
+}
+.restaurant-img{
+    object-fit: cover;
+    max-height: 350px;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+.header-img{
+   width: 200px; 
+   height: 100%;
+   justify-items: center;
+}
+/*menu*/
+.menu-header{
+    display: flex;
+    justify-content: space-between;
+}
+.fa-heart{
+    font-size: 30px;
+    margin-right: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.menu{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu-title{
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.menu-content{
+    background-color: #f2f2f2;
+    border-radius: 35px;
+    max-height: 100%;
+    max-width: 1080px;
+    position: relative;
+    top: inherit;
+    right: inherit;
+    bottom: inherit;
+    left: inherit;
+    margin: auto;
+    text-align: left;
+    margin-top: -96px;
+}
+.price{
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.menu p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu h4{
+    font-size: 20px;
+    font-weight:bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.line{
+    width: 60px;
+    border: 2px solid #99e2d0;
+    margin-left: 25px;
+}
+/*section entrées*/
+.starters-title{
+    margin-left: 25px;
+    font-size: 24px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom:5px;
+}
+.menu-starters{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 20px;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 15px;
+    margin: 20px;
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: padding-right 450ms ease-in-out;
+    cursor: pointer;
+}
+/*section plats*/
+.menu-course{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 20px;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: padding-right 450ms ease-in-out;
+    cursor: pointer;
+}
+.course-title{
+    margin-left: 25px;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom:5px;
+}
+/*section desserts*/
+.menu-dessert{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 20px;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: padding-right 450ms ease-in-out;
+    cursor: pointer;
+}
+.dessert-title{
+    margin-left: 25px;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom:5px;
+}
+/*bouton de commande*/
+.button-order{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+button{
+    border-radius: 35px;
+    padding: 20px 40px 20px 40px;
+    background-image: linear-gradient(130deg, #FF79DA 0%, #9356DC 80%);
+    border-color: transparent;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-left: 90px;
+}
+/*footer*/
+footer{
+    background-color: #353535;
+    padding-bottom: 15px;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+footer li{
+    padding: 5px;
+}
+.footer-title{
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    margin-left: 50px;
+    color: white;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@media screen and (min-width: 1024px){
+    footer{
+        background-color: #353535;
+    }
+    footer ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 30px;
+        margin-right: 60px;
+        padding-bottom: 20px;
+        color: whitesmoke;
+    }
+    .footer-title{
+        color: white;
+        padding-top: 20px;
+        text-align: center;
+    }
+}
