@@ -1,6 +1,6 @@
 /*Loading spinner*/
 .loader {
-  opacity: 0.6;
+  opacity: 0.9;
   position: fixed;
   height: 100vh;
   background-color: #eaeaea;
