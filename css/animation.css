@@ -19,8 +19,8 @@
 
 #loading {
   display: inline-block;
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
   border: 15px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   border-top-color: #fff;
@@ -102,10 +102,8 @@
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background-color: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-image: inherit;
+  color: #ff79da;
   font-weight: bold;
 }
 
@@ -206,4 +204,41 @@ button:hover {
 
 .menu-dessert:hover .fa-circle-check {
   transform: rotate(360deg);
+}
+
+/*medi qeries*/
+@media screen and (min-width: 1024px) {
+  .loader {
+    opacity: 0.9;
+    position: fixed;
+    height: 100vh;
+    background-color: #eaeaea;
+    width: 100%;
+    animation: disappear 200ms 3s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @keyframes disappear {
+    to {
+      transform: scale(0);
+    }
+  }
+
+  #loading {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 15px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
