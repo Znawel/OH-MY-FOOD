@@ -17,11 +17,11 @@ body {
     display: flex;
     justify-content: center;
     background-color: #eaeaea;
-    padding: 0;
+    padding: 15px;
 }
 
 .search-marker {
-    padding-top: 25px;
+    padding-top: 5px;
     margin-right: 25px;
 }
 
@@ -31,6 +31,8 @@ body {
 
 .place {
     font-size: 20px;
+    border: none;
+    background-color: #eaeaea;
 }
 
 /*la section à propos*/
@@ -230,6 +232,9 @@ footer ul {
 footer li {
     padding: 5px;
 }
+footer a{
+    color: white;
+}
 
 .footer-title {
     font-family: 'Shrikhand', cursive;
@@ -289,11 +294,11 @@ footer li {
         display: flex;
         justify-content: center;
         background-color: #ccc;
-        padding: 20px;
+        padding: 25px;
     }
 
     .search-marker {
-        padding-top: 25px;
+        padding-top: 5px;
         margin-right: 25px;
     }
 
@@ -303,6 +308,8 @@ footer li {
 
     .place {
         font-size: 20px;
+        border: none;
+        background-color: #ccc;
     }
 
     .about {
