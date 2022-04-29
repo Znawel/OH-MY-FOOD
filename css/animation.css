@@ -206,7 +206,7 @@ button:hover {
   transform: rotate(360deg);
 }
 
-/*medi qeries*/
+/*media queries*/
 @media screen and (min-width: 1024px) {
   .loader {
     opacity: 0.9;
